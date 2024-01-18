@@ -235,7 +235,7 @@ else(MSVC)
 
   if(CMAKE_COMPILER_IS_GNUCC)
     # these flags are not known to clang
-    set(CMAKE_GCC_FLAGS "-Wl,--no-as-needed")
+    set(CMAKE_GCC_FLAGS "-Wl,--no-as-needed -lrt")
     set(CMAKE_RDYNAMIC_FLAG "-rdynamic")
   endif(CMAKE_COMPILER_IS_GNUCC)
 
